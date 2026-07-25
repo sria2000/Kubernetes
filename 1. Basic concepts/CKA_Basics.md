@@ -168,22 +168,37 @@ Contains:
 
 ```
 kubectl
-    ↓
+    │
+    ▼
 API Server
-    ↓
-etcd
-    ↓
-Scheduler
-    ↓
-Node
-    ↓
-Kubelet
-    ↓
-CRI
-    ↓
-Container Runtime
-    ↓
-Container
+    │
+    ▼
+etcd (stores the Pod object)
+    │
+    ▼
+Scheduler watches API Server for unscheduled Pods
+    │
+    ▼
+Scheduler selects a Node
+    │
+    ▼
+API Server updates the Pod with the selected Node
+    │
+    ▼
+Kubelet on that Node notices the Pod assignment
+    │
+    ▼
+CRI (Container Runtime Interface)
+    │
+    ▼
+Container Runtime (containerd / CRI-O)
+    │
+    ▼
+Pull image (if needed)
+    │
+    ▼
+Start Container
+
 ```
 
 REST operations:
