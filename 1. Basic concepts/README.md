@@ -20,7 +20,6 @@ This repository contains my personal Kubernetes notes, hands-on labs, installati
 | [k8s-architecture.md](https://github.com/sria2000/Kubernetes/blob/main/k8s-architecture.md) | Kubernetes architecture explained with components and workflow |
 | [declarative-imperative.md](https://github.com/sria2000/Kubernetes/blob/main/declarative-imperative.md) | Declarative vs Imperative Kubernetes management |
 | [multi-container.md](https://github.com/sria2000/Kubernetes/blob/main/multi-container.md) | Multi-container Pods, sidecars, init containers and examples |
-| [replicaset.md](https://github.com/sria2000/Kubernetes/blob/main/replicaset.md) | ReplicaSets, scaling and self-healing |
 | [commands-entrypoints.md](https://github.com/sria2000/Kubernetes/blob/main/commands-entrypoints.md) | Commands, ENTRYPOINT, CMD and container startup behaviour |
 | [cli-documentation.md](https://github.com/sria2000/Kubernetes/blob/main/cli-documentation.md) | Using `kubectl explain` and Kubernetes API documentation |
 | [expose-pod.md](https://github.com/sria2000/Kubernetes/blob/main/1.%20Basic%20concepts/expose-pod.md) | Docker `EXPOSE`, Kubernetes `containerPort` and exposing Pods |
