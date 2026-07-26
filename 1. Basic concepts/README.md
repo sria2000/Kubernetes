@@ -24,6 +24,7 @@ This repository contains my personal Kubernetes notes, hands-on labs, installati
 | [commands-entrypoints.md](https://github.com/sria2000/Kubernetes/blob/main/commands-entrypoints.md) | Commands, ENTRYPOINT, CMD and container startup behaviour |
 | [cli-documentation.md](https://github.com/sria2000/Kubernetes/blob/main/cli-documentation.md) | Using `kubectl explain` and Kubernetes API documentation |
 | [expose-pod.md](https://github.com/sria2000/Kubernetes/blob/main/1.%20Basic%20concepts/expose-pod.md) | Docker `EXPOSE`, Kubernetes `containerPort` and exposing Pods |
+| [containerport.md](containerport.md) | Understanding Kubernetes `containerPort`, application listening ports, and `kubectl port-forward` |
 
 ---
 
