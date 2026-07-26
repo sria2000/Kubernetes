@@ -1,11 +1,13 @@
+
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
   name: nginx-pod
 spec:
   containers:
-  -  image: nginx
-     name: democontainer
-     ports:
-       - containerPort: 8080
-
+  - image: nginx
+    name: democontainer
+    ports:
+    - containerPort: 8080
+```
