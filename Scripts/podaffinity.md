@@ -1,0 +1,34 @@
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-kubernetes-second
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: hello-kubernetes-second
+
+  template:
+    metadata:
+      labels:
+        app: hello-kubernetes-second
+
+    spec:
+      affinity:
+        podAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchExpressions:
+              - key: app
+                operator: NotIn
+                values:
+                - frontend
+            topologyKey: kubernetes.io/hostname
+
+      containers:
+      - name: with-node-affinity
+        image: nginx
+```
