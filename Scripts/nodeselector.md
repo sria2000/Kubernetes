@@ -1,3 +1,4 @@
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -8,3 +9,4 @@ spec:
   containers:
   - name: nginx-pod
     image: nginx
+```
