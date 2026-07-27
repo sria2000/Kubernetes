@@ -1,3 +1,4 @@
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -10,4 +11,4 @@ spec:
   containers:
   - image: nginx
     name: nginx
-![Uploading image.png…]()
+```
